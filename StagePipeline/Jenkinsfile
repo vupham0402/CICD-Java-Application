@@ -13,12 +13,18 @@ pipeline {
         jdk "OracleJDK8"
     }
 	
+    environment {
+        registryCredential = 'ecr:us-east-1:awscreds'
+        appRegistry = '869828647101.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
+        vprofileRegistry = 'https://869828647101.dkr.ecr.us-east-1.amazonaws.com'
+    }
+
     stages{
         
         stage("Build App Image"){
             steps{
                 script{
-                    dockerImage = docker.build(appRegistry + ":$BUILD_NUMBER", "./Docker-files/app/multistage/")
+                    dockerImage = docker.build(appRegistry + ":$BUILD_NUMBER", "./Docker-files/app/")
                 }
             }
         }
