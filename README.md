@@ -11,5 +11,4 @@
 ### Github
 - Create a webhook with public IP from Jenkins EC2 to automate building pipeline every new code is pushed to the branch
 
-- 
 
