@@ -2,9 +2,9 @@
  
 ## Prerequisites
 ### AWS EC2
-- Jenkins using userdata/jenkins-setup.sh
-- Nexus using userdata/nexus-setup.sh
-- SonarQube using userdata/sonar-setup.sh
+- Jenkins (Port 8080) using userdata/jenkins-setup.sh and add sonarqube security group in inbound rules at port 8080
+- Nexus (Port 8081) using userdata/nexus-setup.sh and add jenkins security group in inbound rules at port 8081
+- SonarQube (Port 80) using userdata/sonar-setup.sh and add jenkins security group in inbound rules at port 80
 ### Jenkins
 - Install Maven Integration plugin
 - Install Github Integration plugin
