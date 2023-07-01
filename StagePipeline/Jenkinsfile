@@ -8,12 +8,13 @@ pipeline {
     
 	agent any
 	
-	tools {
+	tools {n
         maven "MAVEN3"
         jdk "OracleJDK8"
     }
 	
     environment {
+        NEXUSPORT = '8081'
         registryCredential = 'ecr:us-east-1:awscreds'
         appRegistry = '869828647101.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
         vprofileRegistry = 'https://869828647101.dkr.ecr.us-east-1.amazonaws.com'
