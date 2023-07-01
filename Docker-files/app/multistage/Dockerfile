@@ -2,8 +2,6 @@ FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
 RUN git clone -b cd-jenkins https://github.com/vupham0402/CICD_Java_Web_Application.git
 RUN cd CICD_Java_Web_Application
-RUN cd CICD_Java_Web_Application
-RUN ls
 RUN mvn install
 
 FROM tomcat:9-jre11
