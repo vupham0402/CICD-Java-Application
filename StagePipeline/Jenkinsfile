@@ -14,7 +14,9 @@ pipeline {
     }
 	
     environment {
+        NEXUSIP = '172.31.94.164'
         NEXUSPORT = '8081'
+        NEXUS_GRP_REPO = 'vprofile-maven-group'
         registryCredential = 'ecr:us-east-1:awscreds'
         appRegistry = '869828647101.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
         vprofileRegistry = 'https://869828647101.dkr.ecr.us-east-1.amazonaws.com'
