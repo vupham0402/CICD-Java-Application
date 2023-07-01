@@ -14,6 +14,7 @@
 - Install Build Timestamp plugin
 - Install java-1.8.0-openjdk-amd64 and used /usr/lib/jvm/java-1.8.0-openjdk-amd64 as JAVA_HOME
 - Install maven 3
+- At System/Slack, match workspace and channel in Slack and create a slack credential
 ### Nexus
 - Create maven2 (hosted) repository: project_name-release
 - Create maven2 (proxy) repository: project_name-maven-central and enter url https://repo1.maven.org/maven2/ in Remote storage
