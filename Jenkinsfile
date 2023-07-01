@@ -1,7 +1,9 @@
+//Define color for slack notification
 def COLOR_MAP = [
     'SUCCESS': 'good', 
     'FAILURE': 'danger',
 ]
+
 pipeline {
     
 	agent any
