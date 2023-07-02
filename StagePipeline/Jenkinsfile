@@ -19,7 +19,7 @@ pipeline {
         NEXUS_PASS = 'admin'
         RELEASE_REPO = 'vprofile-release'
         CENTRAL_REPO = 'vpro-maven-central'
-        NEXUSIP = '172.31.94.164'
+        NEXUSIP = '44.201.146.171'
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'vprofile-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
@@ -31,12 +31,6 @@ pipeline {
     }
 
     stages{
-
-        stage('BUILD'){
-            steps {
-                sh 'mvn -s settings.xml -DskipTests install'
-            }
-        }
         
         stage("Build App Image"){
             steps{
