@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.visualpathit</groupId>
     <artifactId>vprofile</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <version>v2</version>
     <name>Visualpathit VProfile Webapp</name>
     <url>http://maven.apache.org</url>
