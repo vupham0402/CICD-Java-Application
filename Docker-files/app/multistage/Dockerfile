@@ -1,8 +1,7 @@
 FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
-RUN git clone -b cd-jenkins https://github.com/vupham0402/CICD_Java_Web_Application.git
-WORKDIR /CICD_Java_Web_Application
-RUN mvn install
+RUN git clone https://github.com/devopshydclub/vprofile-project.git
+RUN cd vprofile-project && git checkout docker && mvn install
 
 FROM tomcat:9-jre11
 
