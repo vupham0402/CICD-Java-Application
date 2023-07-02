@@ -104,8 +104,7 @@ pipeline {
                 )
             }
         }
-    }
-        
+
         stage("Build App Image"){
             steps{
                 script{
@@ -125,7 +124,7 @@ pipeline {
             }
         }
     }
-    
+
     post {
         always {
             echo 'Slack Notifications.'
