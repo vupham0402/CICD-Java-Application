@@ -1,6 +1,4 @@
-﻿# CICD-Jenkins-Nexus-SonarQube
- 
-## Prerequisites
+ ## Prerequisites
 ### AWS EC2
 - Jenkins (Port 8080) using userdata/jenkins-setup.sh and add sonarqube security group in inbound rules at port 8080
 - Nexus (Port 8081) using userdata/nexus-setup.sh and add jenkins security group in inbound rules at port 8081
