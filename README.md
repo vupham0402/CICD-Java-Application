@@ -46,7 +46,4 @@
 - Check project_name-release to see the artifact after building the Jenkins pipeline
 ### Github
 - Create a webhook with public IP from Jenkins EC2 to automate building pipeline every new code is pushed to the branch
-### AWS ECR
-- Make sure the image is uploaded to the repository
-### AWS ECS
-- Check health and containers
+
