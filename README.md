@@ -14,7 +14,6 @@
 - Install SonarQube Scanner plugin
 - Install Slack Notification plugin
 - Install Build Timestamp plugin
-- Install Amazon ECR plugin
 - Install CloudBees AWS Credentials Plugin
 - Install java-1.8.0-openjdk-amd64 and used /usr/lib/jvm/java-1.8.0-openjdk-amd64 as JAVA_HOME
 - Install maven 3
