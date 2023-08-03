@@ -1,3 +1,9 @@
+## Description
+-	Jenkins: Implemented automated code compilation, resulting in triggered builds upon Git changes.
+-	SonarQube: Incorporated a code analysis tool to enforce code quality standards and generate detailed reports.
+-	Nexus: Developed an artifact repository with efficient storage, versioning, and dependency management.
+-	Ansible: Empowered flexible deployment, enabling the seamless deployment of any artifact and facilitating effortless rollback to previous versions through parameterized job execution.
+-	Route 53: Enhanced convenience and accessibility by creating the creation of staging and prod DNS records.
 ## Prerequisites
 ### AWS EC2
 - Jenkins (Port 8080) using userdata/jenkins-setup.sh and add sonarqube security group in inbound rules at port 8080
