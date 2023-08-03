@@ -1,3 +1,9 @@
+## Description
+- Jenkins: Automated code compiles and conducts unit testing, triggering builds automatically upon Git changes.
+- SonarQube: Integrated a code analysis tool, enforced code quality standards, and generated reports.
+-	Nexus: Built an artifact repository and provided efficient storage, versioning, and dependency management.
+-	Docker: Utilized application containerization, simplified deployment, and ensured consistency.
+-	AWS ECR and ECS: Leveraged AWS ECR for Docker image storage and employed AWS ECS for reliable and scalable container deployment.
 ## Prerequisites
 ### AWS EC2
 - Jenkins (Port 8080) using userdata/jenkins-setup.sh and add sonarqube security group in inbound rules at port 8080
